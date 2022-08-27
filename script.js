@@ -5,6 +5,7 @@ const piano = () => {
     const keys = [...document.querySelectorAll('.key')];
 
     const playSound = (e) => {
+        console.log(e);
         if(e.pointerType === 'touch' || e.pointerType === 'mouse') e.keyCode = e.target.getAttribute('data-key');
         const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
         const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
@@ -26,6 +27,7 @@ const piano = () => {
     };
 
     document.addEventListener('keyup', playSound, false);
+    document.addEventListener('touchstart', playSound, false);
     keys.forEach(key => key.addEventListener('click', playSound));
 };
 
