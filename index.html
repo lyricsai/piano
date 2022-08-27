@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Piano notes</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="keys">
+            <div data-key="67" class="key">
+                <span class="sound">Do</span>
+                <kbd>C</kbd>
+            </div>
+            <div data-key="68" class="key">
+                <span class="sound">Re</span>
+                <kbd>D</kbd>
+            </div>
+            <div data-key="69" class="key">
+                <span class="sound">Mi</span>
+                <kbd>E</kbd>
+            </div>
+            <div data-key="70" class="key">
+                <span class="sound">Fa</span>
+                <kbd>F</kbd>
+            </div>
+            <div data-key="71" class="key">
+                <span class="sound">Sol</span>
+                <kbd>G</kbd>
+            </div>
+            <div data-key="65" class="key">
+                <span class="sound">La</span>
+                <kbd>A</kbd>
+            </div>
+            <div data-key="66" class="key">
+                <span class="sound">Si</span>
+                <kbd>B</kbd>
+            </div>
+            <div data-key="86" class="key">
+                <span class="sound">Do</span>
+                <kbd>V</kbd>
+            </div>
+        </div>
+
+        <audio data-key="67" src="sounds/do.m4a"></audio>
+        <audio data-key="68" src="sounds/re.m4a"></audio>
+        <audio data-key="69" src="sounds/mi.m4a"></audio>
+        <audio data-key="70" src="sounds/fa.m4a"></audio>
+        <audio data-key="71" src="sounds/sol.m4a"></audio>
+        <audio data-key="65" src="sounds/la.m4a"></audio>
+        <audio data-key="66" src="sounds/si.m4a"></audio>
+        <audio data-key="86" src="sounds/octave-do.m4a"></audio>
+        <script src="./script.js"></script>
+    </body>
+</html>
