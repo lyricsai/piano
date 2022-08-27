@@ -28,6 +28,8 @@ const piano = () => {
     document.addEventListener('keyup', playSound, false);
     keys.forEach(key => key.addEventListener('click', playSound));
     keys.forEach(key => key.addEventListener('touchend', playSound));
+
+    document.addEventListener('dblclick', (e) => e.preventDefault());
 };
 
 piano();
