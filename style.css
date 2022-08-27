@@ -33,6 +33,7 @@ html {
     height: 50vh;
     text-align: center;
     background: #ffffff99;
+    cursor: pointer;
 }
 
 .playing {
