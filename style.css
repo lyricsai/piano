@@ -32,9 +32,7 @@ html {
     width: 5rem;
     height: 50vh;
     text-align: center;
-    color: white;
-    background: rgba(255, 255, 255, 0.6);
-    text-shadow: 0 0 0.5rem black;
+    background: #ffffff99;
 }
 
 .playing {
@@ -51,5 +49,12 @@ kbd {
 .sound {
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    color: #ffc600;
+    color: #600;
+}
+
+@media (min-width: 768px) {
+    .key {
+        width: 10rem;
+        font-size: 3rem;
+    }
 }
